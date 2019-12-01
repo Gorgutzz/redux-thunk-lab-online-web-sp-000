@@ -1,11 +1,8 @@
 // write and export your action creator function here
 function fetchCats() {
-  const cats = [
-    {name: "Neil Armstrong", craft: "Apollo 11"},
-    {name: "Buzz Aldrin", craft: "Apollo 11"},
-    {name: "Michael Collins", craft: "Apollo 11"}
-  ];
-  return {
+  const cats = fetch('https://learn-co-curriculum.github.io/cat-api/cats.json').then(response => {
+    return response.json()
+  }).then(responseJSON => {
     type: 'ADD_ASTRONAUTS',
     astronauts
   };
