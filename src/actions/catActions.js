@@ -1,5 +1,5 @@
 // write and export your action creator function here
-function fetchAstronauts() {
+function fetchCats() {
   const astronauts = [
     {name: "Neil Armstrong", craft: "Apollo 11"},
     {name: "Buzz Aldrin", craft: "Apollo 11"},
